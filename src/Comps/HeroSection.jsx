@@ -6,7 +6,7 @@ export default function HeroSection({contentMiniBar, firstTitle, secondTitle}) {
         <>
             <section id='hero' className='align-content-center'
                 style={{
-                    height: '100vh'
+                    height: '100dvh'
                 }}>
                 <div className='d-flex flex-column justify-content-between gap-5'
                     style={{

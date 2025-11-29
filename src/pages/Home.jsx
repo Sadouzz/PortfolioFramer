@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <section id='hero' className='align-content-center'
                 style={{
-                    height: '100vh',
+                    height: '100dvh',
 
                 }}>
                 <div className='ms-lg-5'
