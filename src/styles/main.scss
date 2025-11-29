@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// 🎨 Ajout de tes couleurs perso
+$custom-colors: (
+  "red": #cc001e,
+  "black": #0e0e0e,
+  "yellow2": #ffae2e,
+  "yellow": #FAB440,
+  'purple': #4E47C6,
+  "darkBlue": #07143F,
+);
+
+// Fusion avec la map existante
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
