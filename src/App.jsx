@@ -18,6 +18,7 @@ import { SplitText } from "gsap/SplitText";
 
 // Import votre vidéo (mettez-la dans src/assets/)
 import backgroundVideo from './assets/vid.mp4'; // ← Votre fichier vidéo
+import Contact from './pages/Contact';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
@@ -82,6 +83,7 @@ function AppContent() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </main>

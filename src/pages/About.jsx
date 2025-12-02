@@ -69,14 +69,14 @@ export default function About() {
             marginTop: '0px'
         },
         {
-            title: '12',
+            title: '6',
             suffix: 'mois',
             content: 'd’expérience moyenne concentrée sur le développement web et jeu vidéo.',
             marginTop: '60px'
         },
         {
-            title: '95',
-            suffix: '%',
+            title: '75',
+            suffix: '% +',
             content: 'de retours positifs de collaborateurs et clients.',
             marginTop: '0px'
         },
@@ -91,7 +91,7 @@ export default function About() {
             suffix: '+',
             content: 'technos & outils maîtrisés',
             highlight: {
-                text: 'Unity, React, Spring, Django, etc.'
+                text: 'Unity, React, Spring, etc.'
             },
             marginTop: '40px'
         },

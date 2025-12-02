@@ -50,26 +50,38 @@ const StatsCard = ({
                     <div className="card-body p-4 position-relative d-flex justify-content-between flex-column">
                         {/* Headline avec nombre */}
                         <div className="d-flex align-items-baseline mb-3">
-                            {prefix && <span className="fs-4 fw-light me-2 text-muted">{prefix}</span>}
+                            {prefix && (
+                                <span className="fs-4 fw-light me-2 text-muted">{prefix}</span>
+                            )}
+
                             <h2 className="display-3 fw-light mb-0 text-yellow2">
                                 {title}
                             </h2>
-                            {suffix && <span className="fs-4 fw-light ms-2 text-muted">{suffix}</span>}
+
+                            {suffix && (
+                                <span
+                                    className={`fs-4 fw-light ms-2 mb-2 ${type === "stats" ? "text-black" : "text-white"
+                                        }`}
+                                >
+                                    {suffix}
+                                </span>
+                            )}
                         </div>
+
 
                         <div>
                             {/* Description */}
-                            <p className="mb-2 text-black" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
+                            <p className={`mb-2 ${type === "stats" ? "text-black" : "text-white"}`} style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
                                 {content}
                                 {sublabel && (
-                                    <span className="d-block text-muted small mt-1">{sublabel}</span>
+                                    <span className={`mb-2 d-block  small mt-1 ${type === "stats" ? "text-black" : "text-white"}`} >{sublabel}</span>
                                 )}
                             </p>
 
                             {/* Highlight optionnel */}
                             {highlight && (
                                 <p className="mb-0 small">
-                                    <span className="text-muted">{highlight.text}</span>{' '}
+                                    <span className={`mb-2 ${type === "stats" ? "text-black" : "text-white"}`}>{highlight.text}</span>{' '}
                                     <span className="fw-semibold text-yellow2">
                                         {highlight.accent}
                                     </span>

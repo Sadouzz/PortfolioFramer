@@ -44,7 +44,7 @@ export default function ElementsFixed() {
             <small className="fixed-element-top" style={{ color: "white" }}>
                 DEVELOPER, GAME ARTIST & DESIGN ALCHEMIST
             </small>
-            <span className="bg-info-subtle px-3 py-1 rounded-2 oo" style={{ color: "yellow" }}>
+            <span className="bg-white shadow px-3 py-1 rounded-2 oo text-red">
                 ENG
             </span>
         </div>
